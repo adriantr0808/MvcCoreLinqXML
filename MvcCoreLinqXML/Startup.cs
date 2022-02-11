@@ -29,6 +29,7 @@ namespace MvcCoreLinqXML
             services.AddSingleton<PathProvider>();
             services.AddSingleton<RepositoryJoyerias>();
             services.AddSingleton<RepositoryClientes>();
+            services.AddSingleton<RepositoryPeliculas>();
 
             services.AddControllersWithViews();
         }
