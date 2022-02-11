@@ -1,0 +1,60 @@
+﻿@model IEnumerable<MvcCoreLinqXML.Models.Cliente>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+
+<a asp-controller="Clientes" asp-action="Create" class="btn btn-primary mt-4 mb-4">Create</a>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.IdCliente)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Nombre)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Email)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Direccion)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Imagen)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.IdCliente)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Nombre)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Email)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Direccion)
+            </td>
+            <td>
+                <img src= "@Html.DisplayFor(modelItem => item.Imagen)" width="80px" height="80px"/>
+               
+            </td>
+            <td>
+                <a class="btn btn-success ms-3" asp-controller="Clientes" asp-action="Details" asp-route-id="@item.IdCliente">Detalles</a>
+                <a class="btn btn-warning ms-3" asp-controller="Clientes" asp-action="Edit" asp-route-id="@item.IdCliente">Editar</a>
+                <a class="btn btn-danger ms-3 asp-controller="Clientes" asp-action="Delete"  asp-route-id="@item.IdCliente">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
