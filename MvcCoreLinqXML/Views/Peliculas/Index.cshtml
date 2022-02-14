@@ -46,13 +46,13 @@
                 @Html.DisplayFor(modelItem => item.Descripcion)
             </td>
             <td>
-                <img src="@Html.DisplayFor(modelItem => item.Poster)" width="80px" height="120px"/>
-                
+                <img src="@Html.DisplayFor(modelItem => item.Poster)" width="120px" height="120px" />
+
             </td>
             <td>
-                @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
-                @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
-                @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
+                <a class="btn btn-danger" asp-controller="Peliculas" asp-action="Escenas" asp-route-idpelicula="@item.Id">Ver Escenas</a>
+                <a class="btn btn-warning" asp-controller="Peliculas" asp-action="EscenaPelicula" asp-route-idpelicula="@item.Id" >Ver Escenas Paginadas</a>
+                <a class="btn btn-success" asp-controller="Peliculas" asp-action="Details" asp-route-idpelicula="@item.Id">Detalles</a>
             </td>
         </tr>
 }

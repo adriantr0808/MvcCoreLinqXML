@@ -1,0 +1,653 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<cursos>
+  <curso idcurso="425.1">
+	<titulo>Master desarrollo FAME 2021-2022</titulo>
+	<edicion>2021-2022</edicion>
+	<turno>Mañana</turno>
+	<contenidos>Angular, React, Vue, Net Core, Azure, AWS, Xamarin</contenidos>
+    <usuario id="1">
+      <nombre>Francisco</nombre>
+      <apellidos>Garcia Serrano</apellidos>
+	  <perfil>profesor</perfil>
+	  <nota>10</nota>
+	  <username>paco</username>
+	  <password>12345</password>
+    </usuario>
+    <usuario id="2">
+      <nombre>Juan</nombre>
+      <apellidos>Bou</apellidos>
+	  <perfil>director</perfil>
+	  <nota>10</nota>
+	  <username>juan</username>
+	  <password>12345</password>	  
+    </usuario>
+    <usuario id="3">
+      <nombre>Steven-Alexander</nombre>
+      <apellidos>Cadena Giler</apellidos>
+	  <perfil>alumno</perfil>
+	  <nota>10</nota>
+	  <username>steven</username>
+	  <password>12345</password>	  
+    </usuario>
+    <usuario id="4">
+      <nombre>Agustin</nombre>
+      <apellidos>Campos Martinez</apellidos>
+	  <perfil>alumno</perfil>
+	  <nota>10</nota>
+	  <username>agus</username>
+	  <password>12345</password>
+    </usuario>
+    <usuario id="5">
+      <nombre>Maria del Mar</nombre>
+      <apellidos>Carrion Garcia</apellidos>
+	  <perfil>alumno</perfil>
+	  <nota>10</nota>
+	  <username>mar</username>
+	  <password>12345</password>	  
+    </usuario>
+    <usuario id="6">
+      <nombre>Sergio</nombre>
+      <apellidos>de San Clemente Muñoz</apellidos>
+	  <perfil>alumno</perfil>
+	  <nota>10</nota>
+  	  <username>sergio</username>
+	  <password>12345</password>
+    </usuario>
+    <usuario id="7">
+      <nombre>Maria Adela</nombre>
+      <apellidos>España Moya</apellidos>
+	  <perfil>alumno</perfil>
+	  <nota>10</nota>	  
+	  <username>maria</username>
+	  <password>12345</password>	  
+    </usuario>
+    <usuario id="8">
+      <nombre>Luis Enrique</nombre>
+      <apellidos>Frias Araujo</apellidos>
+	  <perfil>alumno</perfil>
+	  <nota>10</nota>
+	  <username>luise</username>
+	  <password>12345</password>	  
+    </usuario>
+    <usuario id="9">
+      <nombre>Diego</nombre>
+      <apellidos>Garcia Gordo</apellidos>
+	  <perfil>alumno</perfil>
+	  <nota>10</nota>	
+	  <username>diegog</username>
+	  <password>12345</password>
+    </usuario>
+    <usuario id="10">
+      <nombre>Ivan</nombre>
+      <apellidos>Gonzalo Lucas</apellidos>
+	  <perfil>alumno</perfil>
+	  <nota>10</nota>
+	  <username>ivan</username>
+	  <password>12345</password>	  
+    </usuario>
+    <usuario id="11">
+      <nombre>Jinson Israel</nombre>
+      <apellidos>Lasluisa Remache</apellidos>
+	  <perfil>alumno</perfil>
+	  <nota>10</nota>
+	  <username>israel</username>
+	  <password>12345</password>	  
+    </usuario>
+    <usuario id="12">
+      <nombre>Braian Oscar</nombre>
+      <apellidos>Loza Quiroga</apellidos>
+	  <perfil>alumno</perfil>
+	  <nota>10</nota>
+	  <username>braian</username>
+	  <password>12345</password>	  
+    </usuario>
+    <usuario id="13">
+      <nombre>Jose Antonio</nombre>
+      <apellidos>Lozano Torres</apellidos>
+	  <perfil>alumno</perfil>
+	  <nota>10</nota>	  
+	  <username>jose</username>
+	  <password>12345</password>	  
+    </usuario>
+    <usuario id="14">
+      <nombre>Esteban</nombre>
+      <apellidos>Martinez Quintanar</apellidos>
+	  <perfil>alumno</perfil>
+	  <nota>10</nota>
+	  <username>esteban</username>
+	  <password>12345</password>
+    </usuario>
+    <usuario id="15">
+      <nombre>Alvaro</nombre>
+      <apellidos>Moya Herraiz</apellidos>
+	  <perfil>alumno</perfil>
+	  <nota>10</nota>	  
+	  <username>alvaro</username>
+	  <password>12345</password>	  
+    </usuario>
+    <usuario id="16">
+      <nombre>Andres</nombre>
+      <apellidos>Otero Figueiredo</apellidos>
+	  <perfil>alumno</perfil>
+	  <nota>10</nota>
+	  <username>andres</username>
+	  <password>12345</password>	  
+    </usuario>
+    <usuario id="17">
+      <nombre>Alejo</nombre>
+      <apellidos>Perez Benayas</apellidos>
+	  <perfil>alumno</perfil>
+	  <nota>10</nota>
+	  <username>alejo</username>
+	  <password>12345</password>	  
+    </usuario>
+    <usuario id="18">
+      <nombre>Diego</nombre>
+      <apellidos>Plaza Rodan</apellidos>
+	  <perfil>alumno</perfil>
+	  <nota>10</nota>	  
+	  <username>diegop</username>
+	  <password>12345</password>	  
+    </usuario>
+    <usuario id="19">
+      <nombre>Yesenia</nombre>
+      <apellidos>Pozo Vargas</apellidos>
+	  <perfil>alumno</perfil>
+	  <nota>10</nota>
+	  <username>yesi</username>
+	  <password>12345</password>	  
+    </usuario>
+    <usuario id="20">
+      <nombre>Ruben</nombre>
+      <apellidos>Pozuelo Martinez</apellidos>
+	  <perfil>alumno</perfil>
+	  <nota>10</nota>
+	  <username>ruben</username>
+	  <password>12345</password>	  
+    </usuario>
+    <usuario id="21">
+      <nombre>Alexandru</nombre>
+      <apellidos>Preutesei</apellidos>
+	  <perfil>alumno</perfil>
+	  <nota>10</nota>
+	  <username>alexandru</username>
+	  <password>12345</password>	  
+    </usuario>
+    <usuario id="22">
+      <nombre>Miguel</nombre>
+      <apellidos>Rico Corrales</apellidos>
+	  <perfil>alumno</perfil>
+	  <nota>10</nota>
+	  <username>miguel</username>
+	  <password>12345</password>	  
+    </usuario>
+    <usuario id="23">
+      <nombre>Adrian</nombre>
+      <apellidos>Rodriguez Tejedor</apellidos>
+	  <perfil>alumno</perfil>
+	  <nota>10</nota>
+	  <username>adrian</username>
+	  <password>12345</password>	  
+    </usuario>
+    <usuario id="25">
+      <nombre>Diego</nombre>
+      <apellidos>Sanchez Cañamero</apellidos>
+	  <perfil>alumno</perfil>
+	  <nota>10</nota>	  
+	  <username>diegos</username>
+	  <password>12345</password>	  
+    </usuario>
+    <usuario id="26">
+      <nombre>Luis Alberto</nombre>
+      <apellidos>Torres Olivera</apellidos>
+	  <perfil>alumno</perfil>
+	  <nota>10</nota>
+	  <username>luise</username>
+	  <password>12345</password>	  
+    </usuario>
+  </curso>
+  <curso idcurso="374.5">
+	<titulo>Master desarrollo FAME 2020-2021</titulo>
+	<edicion>2020-2021</edicion>
+	<turno>tarde</turno>
+	<contenidos>Angular, React, Net Core, Blazor, Azure, Xamarin</contenidos>  
+    <usuario id="27">
+      <nombre>Javier</nombre>
+      <apellidos>Vazquez</apellidos>
+	  <perfil>profesor</perfil>
+	  <nota>10</nota>
+	  <username>javiprofe</username>
+	  <password>12345</password>	  
+    </usuario>
+    <usuario id="28">
+      <nombre>Jesus</nombre>
+      <apellidos>Ruiz</apellidos>
+	  <perfil>director</perfil>
+	  <nota>10</nota>
+	  <username>jesusruiz</username>
+	  <password>12345</password>	  
+    </usuario>	
+    <usuario id="29">
+      <nombre>Alejandro</nombre>
+      <apellidos>Garcia Vacas</apellidos>
+	  <perfil>alumno</perfil>
+	  <nota>10</nota>
+	  <username>alejandrov</username>
+	  <password>12345</password>	  
+    </usuario>
+    <usuario id="30">
+      <nombre>Alejandro</nombre>
+      <apellidos>Navaroli Salles</apellidos>
+	  <perfil>alumno</perfil>
+	  <nota>10</nota>	 
+	  <username>alejandron</username>
+	  <password>12345</password>	  
+    </usuario>
+    <usuario id="31">
+      <nombre>Aurora</nombre>
+      <apellidos>Moreno Lopez</apellidos>
+	  <perfil>alumno</perfil>
+	  <nota>10</nota>	  
+	  <username>aurora</username>
+	  <password>12345</password>	  
+    </usuario>
+    <usuario id="32">
+      <nombre>Borja</nombre>
+      <apellidos>Jaudenes Baillo</apellidos>
+	  <perfil>alumno</perfil>
+	  <nota>10</nota>
+	  <username>borja</username>
+	  <password>12345</password>	  
+    </usuario>
+    <usuario id="33">
+      <nombre>Carlos</nombre>
+      <apellidos>Campayo Serrano</apellidos>
+	  <perfil>alumno</perfil>
+	  <nota>10</nota>
+	  <username>carlos</username>
+	  <password>12345</password>	  
+    </usuario>
+    <usuario id="34">
+      <nombre>Carlota</nombre>
+      <apellidos>Lobo Sanz</apellidos>
+	  <perfil>alumno</perfil>
+	  <nota>10</nota>
+	  <username>carlota</username>
+	  <password>12345</password>	  
+    </usuario>
+    <usuario id="35">
+      <nombre>Enrique Javier</nombre>
+      <apellidos>Muñoz Romera</apellidos>
+	  <perfil>alumno</perfil>
+	  <nota>10</nota>
+	  <username>kike</username>
+	  <password>12345</password>	  
+    </usuario>
+    <usuario id="36">
+      <nombre>Felix</nombre>
+      <apellidos>Itiel Arino Gila</apellidos>
+	  <perfil>alumno</perfil>
+	  <nota>10</nota>	  
+	  <username>tete</username>
+	  <password>12345</password>	  
+    </usuario>
+    <usuario id="37">
+      <nombre>Gabriel</nombre>
+      <apellidos>Macias Fernandez</apellidos>
+	  <perfil>alumno</perfil>
+	  <nota>10</nota>	  
+	  <username>gabri</username>
+	  <password>12345</password>	  
+    </usuario>
+    <usuario id="38">
+      <nombre>George Francis</nombre>
+      <apellidos>Shinner Rodriguez</apellidos>
+	  <perfil>alumno</perfil>
+	  <nota>10</nota>
+	  <username>george</username>
+	  <password>12345</password>	  
+    </usuario>
+    <usuario id="39">
+      <nombre>Gerard Alexander</nombre>
+      <apellidos>Nina Picon</apellidos>
+	  <perfil>alumno</perfil>
+	  <nota>10</nota>
+	  <username>gerard</username>
+	  <password>12345</password>	  
+    </usuario>
+    <usuario id="40">
+      <nombre>Javier</nombre>
+      <apellidos>Lopez Collado</apellidos>
+	  <perfil>alumno</perfil>
+	  <nota>10</nota>
+	  <username>javilopez</username>
+	  <password>12345</password>	  
+    </usuario>
+    <usuario id="41">
+      <nombre>Javier</nombre>
+      <apellidos>Ruano Manzanares</apellidos>
+	  <perfil>alumno</perfil>
+	  <nota>10</nota>
+	  <username>javiruano</username>
+	  <password>12345</password>	  
+    </usuario>
+    <usuario id="42">
+      <nombre>Jhoanna Sharon</nombre>
+      <apellidos>Lipa Cardenas</apellidos>
+	  <perfil>alumno</perfil>
+	  <nota>10</nota>
+	  <username>sharon</username>
+	  <password>12345</password>	  
+    </usuario>
+    <usuario id="43">
+      <nombre>Juan Carlos</nombre>
+      <apellidos>Vicente Vicente</apellidos>
+	  <perfil>alumno</perfil>
+	  <nota>10</nota>
+	  <username>juancarlos</username>
+	  <password>12345</password>	  
+    </usuario>
+    <usuario id="44">
+      <nombre>Manuel</nombre>
+      <apellidos>Menendez Ibañez</apellidos>
+	  <perfil>alumno</perfil>
+	  <nota>10</nota>	 
+	  <username>manuel</username>
+	  <password>12345</password>	  
+    </usuario>
+    <usuario id="45">
+      <nombre>Maria Victoria</nombre>
+      <apellidos>Castro Dotta</apellidos>
+	  <perfil>alumno</perfil>
+	  <nota>10</nota>
+	  <username>vicky</username>
+	  <password>12345</password>	  
+    </usuario>
+    <usuario id="46">
+      <nombre>Mario</nombre>
+      <apellidos>Canales Sanchez</apellidos>
+	  <perfil>alumno</perfil>
+	  <nota>10</nota>	  
+	  <username>mario</username>
+	  <password>12345</password>
+    </usuario>
+    <usuario id="47">
+      <nombre>Max Alexander</nombre>
+      <apellidos>Gonzalez Morales</apellidos>
+	  <perfil>alumno</perfil>
+	  <nota>10</nota>
+	  <username>max</username>
+	  <password>12345</password>	  
+    </usuario>
+    <usuario id="48">
+      <nombre>Nazaret</nombre>
+      <apellidos>De la Calle Mijan</apellidos>
+	  <perfil>alumno</perfil>
+	  <nota>10</nota>	  
+	  <username>naza</username>
+	  <password>12345</password>	  
+    </usuario>
+    <usuario id="49">
+      <nombre>Rafael</nombre>
+      <apellidos>Ruiz de la Fuente</apellidos>
+	  <perfil>alumno</perfil>
+	  <nota>10</nota>
+	  <username>rafa</username>
+	  <password>12345</password>	  
+    </usuario>
+    <usuario id="50">
+      <nombre>Raul</nombre>
+      <apellidos>Castro de la Torre</apellidos>
+	  <perfil>alumno</perfil>
+	  <nota>10</nota>	  
+	  <username>raul</username>
+	  <password>12345</password>	  
+    </usuario>
+    <usuario id="51">
+      <nombre>Sergio</nombre>
+      <apellidos>Arribas Sanchez</apellidos>
+	  <perfil>alumno</perfil>
+	  <nota>10</nota>	  
+	  <username>sergioarribas</username>
+	  <password>12345</password>	  
+    </usuario>
+    <usuario id="52">
+      <nombre>Susana</nombre>
+      <apellidos>Santos Moreno</apellidos>
+	  <perfil>alumno</perfil>
+	  <nota>10</nota>
+	  <username>susana</username>
+	  <password>12345</password>
+    </usuario>
+    <usuario id="53">
+      <nombre>Andres</nombre>
+      <apellidos>Basurto Prato</apellidos>
+	  <perfil>alumno</perfil>
+	  <nota>10</nota>
+	  <username>andresbasurto</username>
+	  <password>12345</password>	  
+    </usuario>
+  </curso>
+  <curso idcurso="258.6">
+	<titulo>Master desarrollo FAME 2019-2020</titulo>
+	<edicion>2019-2020</edicion>
+	<turno>Mañana</turno>
+	<contenidos>Angular, React, Net Core, Azure, SharePoint, Xamarin</contenidos>    
+    <usuario id="54">
+      <nombre>Alejandro</nombre>
+      <apellidos>Galindo</apellidos>
+	  <perfil>profesor</perfil>
+	  <nota>10</nota>
+	  <username>alexprofe</username>
+	  <password>12345</password>	  
+    </usuario>  
+    <usuario id="55">
+      <nombre>Juan</nombre>
+      <apellidos>Bou</apellidos>
+	  <perfil>director</perfil>
+	  <nota>10</nota>
+	  <username>jbou</username>
+	  <password>12345</password>	  
+    </usuario>	
+    <usuario id="56">
+      <nombre>Anthony</nombre>
+      <apellidos>Del Castillo Ruiz</apellidos>
+	  <perfil>alumno</perfil>
+	  <nota>10</nota>
+  	  <username>anthony</username>
+	  <password>12345</password>
+    </usuario>
+    <usuario id="57">
+      <nombre>Jose Ignacio</nombre>
+      <apellidos>Castrillon</apellidos>
+	  <perfil>alumno</perfil>
+	  <nota>10</nota>
+	  <username>nachoc</username>
+	  <password>12345</password>	  
+    </usuario>
+    <usuario id="58">
+      <nombre>Monica</nombre>
+      <apellidos>Chachalo Iles</apellidos>
+	  <perfil>alumno</perfil>
+	  <nota>10</nota>
+	  <username>monica</username>
+	  <password>12345</password>	  
+    </usuario>
+    <usuario id="59">
+      <nombre>Adrian</nombre>
+      <apellidos>Gabriel Chelu</apellidos>
+	  <perfil>alumno</perfil>
+	  <nota>10</nota>
+	  <username>adriang</username>
+	  <password>12345</password>	  
+    </usuario>
+    <usuario id="60">
+      <nombre>Ivan</nombre>
+      <apellidos>Encinas Rodriguez</apellidos>
+	  <perfil>alumno</perfil>
+	  <nota>10</nota>	  
+	  <username>ivanencinas</username>
+	  <password>12345</password>	  
+    </usuario>
+    <usuario id="61">
+      <nombre>Roberto</nombre>
+      <apellidos>Garrido Gutierrez</apellidos>
+	  <perfil>alumno</perfil>
+	  <nota>10</nota>
+	  <username>roberto</username>
+	  <password>12345</password>	  
+    </usuario>
+    <usuario id="62">
+      <nombre>Roberto</nombre>
+      <apellidos>Gomez-Monedero</apellidos>
+	  <perfil>alumno</perfil>
+	  <nota>10</nota>	
+	  <username>robertogomez</username>
+	  <password>12345</password>	  
+    </usuario>
+    <usuario id="63">
+      <nombre>Yibing</nombre>
+      <apellidos>Jin</apellidos>
+	  <perfil>alumno</perfil>
+	  <nota>10</nota>	  
+	  <username>yibing</username>
+	  <password>12345</password>	  
+    </usuario>
+    <usuario id="64">
+      <nombre>Felipe</nombre>
+      <apellidos>Manso Corchado</apellidos>
+	  <perfil>alumno</perfil>
+	  <nota>10</nota>
+	  <username>felipe</username>
+	  <password>12345</password>	  
+    </usuario>
+    <usuario id="65">
+      <nombre>Alejandro</nombre>
+      <apellidos>Merino Ontana</apellidos>
+	  <perfil>alumno</perfil>
+	  <nota>10</nota>
+	  <username>alexmerino</username>
+	  <password>12345</password>	  
+    </usuario>	
+    <usuario id="66">
+      <nombre>Alberto</nombre>
+      <apellidos>Mingo Hernandez</apellidos>
+	  <perfil>alumno</perfil>
+	  <nota>10</nota>
+	  <username>alberto</username>
+	  <password>12345</password>	  
+    </usuario>
+    <usuario id="67">
+      <nombre>Adrian</nombre>
+      <apellidos>Moreno Gallardo</apellidos>
+	  <perfil>alumno</perfil>
+	  <nota>10</nota>	
+	  <username>adrianmoreno</username>
+	  <password>12345</password>	  
+    </usuario>
+    <usuario id="68">
+      <nombre>Ismael</nombre>
+      <apellidos>Perez Lozano</apellidos>
+	  <perfil>alumno</perfil>
+	  <nota>10</nota>	  
+	  <username>ismael</username>
+	  <password>12345</password>	  
+    </usuario>
+    <usuario id="69">
+      <nombre>Goren</nombre>
+      <apellidos>Prado Poza</apellidos>
+	  <perfil>alumno</perfil>
+	  <nota>10</nota>
+	  <username>goren</username>
+	  <password>12345</password>	  
+    </usuario>
+    <usuario id="70">
+      <nombre>Jesus</nombre>
+      <apellidos>Saenz Jimenez</apellidos>
+	  <perfil>alumno</perfil>
+	  <nota>10</nota>
+	  <username>jesuss</username>
+	  <password>12345</password>	  
+    </usuario>
+    <usuario id="71">
+      <nombre>Laura</nombre>
+      <apellidos>San Nicolas Saez</apellidos>
+	  <perfil>alumno</perfil>
+	  <nota>10</nota>
+	  <username>laura</username>
+	  <password>12345</password>	  
+    </usuario>
+    <usuario id="72">
+      <nombre>Eunoe</nombre>
+      <apellidos>Sanchez Aviles</apellidos>
+	  <perfil>alumno</perfil>
+	  <nota>10</nota>
+	  <username>eunoe</username>
+	  <password>12345</password>	  
+    </usuario>
+    <usuario id="73">
+      <nombre>Ivan</nombre>
+      <apellidos>Sanchez Victoria</apellidos>
+	  <perfil>alumno</perfil>
+	  <nota>10</nota>
+	  <username>ivansv</username>
+	  <password>12345</password>	  
+    </usuario>
+    <usuario id="74">
+      <nombre>Petrus</nombre>
+      <apellidos>Uwaleke Mejias</apellidos>
+	  <perfil>alumno</perfil>
+	  <nota>10</nota>
+	  <username>petrus</username>
+	  <password>12345</password>	  
+    </usuario>
+    <usuario id="75">
+      <nombre>Marta</nombre>
+      <apellidos>Valdes Azcarraga</apellidos>
+	  <perfil>alumno</perfil>
+	  <nota>10</nota>
+	  <username>marta</username>
+	  <password>12345</password>	  
+    </usuario>
+    <usuario id="76">
+      <nombre>Benjamin Johnson</nombre>
+      <apellidos>Akpaloo Osei</apellidos>
+	  <perfil>alumno</perfil>
+	  <nota>10</nota>
+	  <username>benjamin</username>
+	  <password>12345</password>	  
+    </usuario>
+    <usuario id="77">
+      <nombre>David</nombre>
+      <apellidos>Alpanes Pelaez</apellidos>
+	  <perfil>alumno</perfil>
+	  <nota>10</nota>	
+	  <username>davidal</username>
+	  <password>12345</password>	  
+    </usuario>
+    <usuario id="78">
+      <nombre>Sara</nombre>
+      <apellidos>Bachiller Parra</apellidos>
+	  <perfil>alumno</perfil>
+	  <nota>10</nota>	
+	  <username>sara</username>
+	  <password>12345</password>	  
+    </usuario>
+	<usuario id="79">
+      <nombre>Jonathan</nombre>
+      <apellidos>Benitez Villafuente</apellidos>
+	  <perfil>alumno</perfil>
+	  <nota>10</nota>	  
+	  <username>jonathan</username>
+	  <password>12345</password>	  
+    </usuario>
+    <usuario id="80">
+      <nombre>Ignacio</nombre>
+      <apellidos>Caballero Ruiz</apellidos>
+	  <perfil>alumno</perfil>
+	  <nota>10</nota>	
+	  <username>nacho</username>
+	  <password>12345</password>	  
+    </usuario>	
+  </curso>
+</cursos>

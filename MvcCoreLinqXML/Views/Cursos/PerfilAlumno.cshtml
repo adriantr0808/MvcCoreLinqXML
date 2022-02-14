@@ -1,0 +1,19 @@
+﻿<h1>Perfil del alumno @Context.User.Identity.Name</h1>
+
+
+<ul class="list-group">
+    <li class="list-group-item">
+        Nombre: @Context.User.Identity.Name
+    </li>
+    <li class="list-group-item">
+        Apellido: @Context.User.FindFirst("APELLIDO").Value
+    </li>
+    <li class="list-group-item">
+        Perfil: @Context.User.FindFirst("PERFIL").Value
+    </li>
+    <li class="list-group-item">
+        Nota: @Context.User.FindFirst("NOTA").Value
+    </li>
+
+
+</ul>

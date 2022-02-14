@@ -11,17 +11,17 @@ namespace MvcCoreLinqXML.Repositories
     public class RepositoryJoyerias
     {
 
-        private PathProvider pathProvider;
+   
         XDocument document;
 
-        public RepositoryJoyerias(PathProvider provider)
+        public RepositoryJoyerias()
         {
             string filename = "joyerias.xml";
-            string path = provider.MapPath
+            string path = PathProvider.MapPath
                 (filename, Folders.Documents);
 
             this.document = XDocument.Load(path);
-            this.pathProvider = provider;
+           
         }
 
         public List<Joyeria> GetJoyerias()

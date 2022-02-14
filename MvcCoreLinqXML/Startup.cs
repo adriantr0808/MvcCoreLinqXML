@@ -1,6 +1,8 @@
+using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
+using Microsoft.AspNetCore.Mvc.ViewFeatures;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.DependencyInjection.Extensions;
@@ -26,17 +28,35 @@ namespace MvcCoreLinqXML
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddSingleton<PathProvider>();
+            services.AddDistributedMemoryCache();
+            services.AddSession();
+
+            services.AddSingleton<ITempDataProvider, CookieTempDataProvider>();
+
+            services.AddControllersWithViews
+                (options => options.EnableEndpointRouting = false)
+                    .AddSessionStateTempDataProvider();
+
+            services.AddAuthentication(options =>
+            {
+                options.DefaultSignInScheme = CookieAuthenticationDefaults.AuthenticationScheme;
+                options.DefaultAuthenticateScheme = CookieAuthenticationDefaults.AuthenticationScheme;
+                options.DefaultChallengeScheme = CookieAuthenticationDefaults.AuthenticationScheme;
+
+            }).AddCookie();
             services.AddSingleton<RepositoryJoyerias>();
             services.AddSingleton<RepositoryClientes>();
             services.AddSingleton<RepositoryPeliculas>();
+            services.AddSingleton<RepositoryCursos>();
 
-            services.AddControllersWithViews();
+            services.AddControllersWithViews(options => options.EnableEndpointRouting=false);
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
+            PathProvider.Initialize(env);
+
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
@@ -51,14 +71,24 @@ namespace MvcCoreLinqXML
             app.UseStaticFiles();
 
             app.UseRouting();
-
+            app.UseSession();
+            app.UseAuthentication();
             app.UseAuthorization();
 
-            app.UseEndpoints(endpoints =>
+            //    app.UseEndpoints(endpoints =>
+            //    {
+            //        endpoints.MapControllerRoute(
+            //            name: "default",
+            //            pattern: "{controller=Home}/{action=Index}/{id?}");
+            //    });
+
+
+            app.UseMvc(routes =>
             {
-                endpoints.MapControllerRoute(
-                    name: "default",
-                    pattern: "{controller=Home}/{action=Index}/{id?}");
+                routes.MapRoute(
+                      name: "default",
+                      template: "{controller=Home}/{action=Index}/{id?}");
+
             });
         }
     }
