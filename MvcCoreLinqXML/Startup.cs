@@ -37,13 +37,25 @@ namespace MvcCoreLinqXML
                 (options => options.EnableEndpointRouting = false)
                     .AddSessionStateTempDataProvider();
 
+            services.AddAuthorization(options =>
+            {
+              options.AddPolicy("Permisos",policy => policy.RequireRole("profesor"));
+               
+
+            });
+
+
             services.AddAuthentication(options =>
             {
                 options.DefaultSignInScheme = CookieAuthenticationDefaults.AuthenticationScheme;
                 options.DefaultAuthenticateScheme = CookieAuthenticationDefaults.AuthenticationScheme;
                 options.DefaultChallengeScheme = CookieAuthenticationDefaults.AuthenticationScheme;
 
-            }).AddCookie();
+            }).AddCookie(CookieAuthenticationDefaults.AuthenticationScheme, config =>
+            {
+                config.AccessDeniedPath = "/Manage/ErrorAcceso";
+
+            });
             services.AddSingleton<RepositoryJoyerias>();
             services.AddSingleton<RepositoryClientes>();
             services.AddSingleton<RepositoryPeliculas>();

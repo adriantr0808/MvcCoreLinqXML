@@ -36,5 +36,22 @@ namespace MvcCoreLinqXML.Controllers
         {
             return View();
         }
+
+        [AuthorizeCursos(Policy ="Permisos")]
+        public IActionResult CreateAlumno(string id)
+        {
+            ViewData["IDCURSO"] = id;
+            TempData["IDCURSO"] = id;
+            return View();
+        }
+
+        [HttpPost]
+        public IActionResult CreateAlumno(int IdUsuario,string Nombre, string Apellido, string Perfil, int Nota, string Username , string Password)
+        {
+            string idcurso = TempData["IDCURSO"].ToString();
+            this.repo.InsertarUsuario(idcurso,IdUsuario, Nombre, Apellido, Perfil, Nota, Username, Password);
+            
+            return RedirectToAction("ListaAlumnos", "Cursos", new { id = idcurso });
+        }
     }
 }

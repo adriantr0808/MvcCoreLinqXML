@@ -88,5 +88,35 @@ namespace MvcCoreLinqXML.Repositories
 
             return usu;
         }
+
+
+        public XElement FindXElementCurso(string idcurso)
+        {
+            var consulta = from datos in this.document.Descendants("curso")
+                           where datos.Attribute("idcurso").Value==idcurso
+                           select datos;
+
+            return consulta.FirstOrDefault();
+        }
+
+        public void InsertarUsuario(string idcurso,int idusuario, string nombre, string apellidos, string perfil, int nota, string username, string password)
+        {
+            XElement XCurso = this.FindXElementCurso(idcurso);
+            XElement rootUser = new XElement("usuario");
+
+            rootUser.SetAttributeValue("id", idusuario);
+            rootUser.Add(new XElement("nombre", nombre));
+            rootUser.Add(new XElement("apellidos", apellidos));
+            rootUser.Add(new XElement("perfil", perfil));
+            rootUser.Add(new XElement("nota", nota));
+            rootUser.Add(new XElement("username", username));
+            rootUser.Add(new XElement("password", password));
+
+            XCurso.Add(rootUser);
+            this.document.Save(this.path);
+
+        }
+
+
     }
 }

@@ -6,10 +6,33 @@
     </li>
     <li class="nav-item">
 
-      
-            <a class="nav-link text-dark" asp-area="" asp-controller="Cursos" asp-action="ListaAlumnos" >Lista Alumnos</a>
-        
+
+
+
+        @if (Context.User.Identity.IsAuthenticated == false)
+        {
+            <a class="nav-link text-dark" asp-area="" asp-controller="Cursos" asp-action="ListaAlumnos">Lista Alumnos</a>
+        }
+        else
+        {
+            <a class="nav-link text-dark" asp-area="" asp-controller="Cursos" asp-action="ListaAlumnos" asp-route-id="@Context.User.FindFirst("IDCURSO").Value">Lista Alumnos</a>
+        }
+
+
 
     </li>
+
+    <li class="nav-item">
+        @if (Context.User.Identity.IsAuthenticated == false)
+        {
+            <a class="nav-link text-dark" asp-area="" asp-controller="Cursos" asp-action="CreateAlumno">Crear Alumno</a>
+        }
+        else
+        {
+            <a class="nav-link text-dark" asp-area="" asp-controller="Cursos" asp-action="CreateAlumno" asp-route-id="@Context.User.FindFirst("IDCURSO").Value">Crear Alumno</a>
+        }
+
+    </li>
+    
     <partial name="_MenuCursoPartial" />
 </ul>

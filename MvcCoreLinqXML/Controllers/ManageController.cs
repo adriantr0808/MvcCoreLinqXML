@@ -37,6 +37,7 @@ namespace MvcCoreLinqXML.Controllers
                     ClaimTypes.Name, ClaimTypes.Role);
 
                 Claim claimName = new Claim(ClaimTypes.Name, usu.Nombre);
+                Claim claimRole = new Claim(ClaimTypes.Role, usu.Perfil);
                 Claim claimApellido = new Claim("APELLIDO", usu.Apellido);
                 Claim claimPerfil = new Claim("PERFIL", usu.Perfil);
                 Claim claimNota = new Claim("NOTA", usu.Nota.ToString());
@@ -47,6 +48,7 @@ namespace MvcCoreLinqXML.Controllers
                 identity.AddClaim(claimPerfil);
                 identity.AddClaim(claimNota);
                 identity.AddClaim(claimIdCurso);
+                identity.AddClaim(claimRole);
 
                 ClaimsPrincipal userPrincipal = new ClaimsPrincipal(identity);
                 await HttpContext.SignInAsync
