@@ -54,7 +54,7 @@ namespace MvcCoreLinqXML.Controllers
 
                 string controller = TempData["controller"].ToString();
                 string action = TempData["action"].ToString();
-                string id = TempData["id"].ToString();
+                string id = claimIdCurso.Value.ToString();
 
                 return RedirectToAction(action, controller, new { id = id});
 

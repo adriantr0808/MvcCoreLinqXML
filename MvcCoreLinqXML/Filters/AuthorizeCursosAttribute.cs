@@ -27,17 +27,17 @@ namespace MvcCoreLinqXML.Filters
             string controller = context.RouteData.Values["controller"].ToString();
             string action = context.RouteData.Values["action"].ToString();
 
-            string id = "";
-            if (context.RouteData.Values.ContainsKey("id"))
-            {
-                id = context.RouteData.Values["id"].ToString();
-            }
+            //string id = "";
+            //if (context.RouteData.Values.ContainsKey("id"))
+            //{
+            //    id = context.RouteData.Values["id"].ToString();
+            //}
 
        
 
             TempData["controller"] = controller;
             TempData["action"] = action;
-            TempData["id"] = id;
+            //TempData["id"] = id;
 
             provider.SaveTempData(context.HttpContext, TempData);
 

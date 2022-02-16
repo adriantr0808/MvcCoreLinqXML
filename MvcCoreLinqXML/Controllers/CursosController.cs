@@ -20,6 +20,7 @@ namespace MvcCoreLinqXML.Controllers
         public IActionResult ListaAlumnos(string id)
         {
 
+
             List<Usuario> usus = this.repo.GetUsuariosCurso(id);
             return View(usus);
         }
